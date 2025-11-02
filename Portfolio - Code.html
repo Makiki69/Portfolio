@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rosemary Moyo — Portfolio</title>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV / TABS -->
+  <header>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#venture">Venture Work</a>
+    <a href="#contact">Contact</a>
+  </header>
+
+  <!-- HERO: Slideshow -->
+  <section class="hero-slideshow" id="top" aria-label="Intro">
+    <div class="slides">
+      <div class="slide active" style="background-image:url('https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/Screenshot%202025-10-28%20103812.png?updatedAt=1762103858275');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/VC%20in%20Biotech.webp?updatedAt=1762100068396');"></div>
+    </div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="hero-text">
+      <h1>Rosemary Moyo</h1>
+      <p>Biomedical Engineer • Computational &amp; Systems Biology • Venture Analyst</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <h2 class="section-title">About</h2>
+      <p class="lead">
+        I’m a Biomedical Engineering student specializing in <b>Computational &amp; Systems Biology</b>, building at the intersection of
+        <b>instrumentation</b>, <b>signal processing</b>, and <b>computational drug discovery</b>. I design circuits and sensors, build optical
+        communication systems, and model biological interactions with cheminformatics and docking. On the venture side, I evaluate biotech
+        and healthtech startups, conduct diligence, and build governance systems that connect innovation with investment.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Engineering & Research">
+      <h2 class="section-title">Engineering &amp; Research</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Screening &amp; Computational Modeling of Plant Antimicrobials</h3>
+          <div class="type">Biomedical Research &amp; Computational Drug Discovery</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20034301.png?updatedAt=1762090700184" alt="Modeling overview">
+          </div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20034356.png?updatedAt=1762090725120" alt="Docking results">
+          </div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179" alt="MIC in fume hood">
+          </div>
+          <p>
+            Investigated <i>Erythrina abyssinica</i> and <i>Combretum zeyheri</i> against <i>C. neoformans</i> &amp; <i>M. smegmatis</i> with MIC assays;
+            modeled hits using RDKit + AutoDock Vina; integrated SAR and docking results.
+          </p>
+          <p class="tags">Python • RDKit • AutoDock Vina • SwissADME • LC–MS/MS • PyMOL</p>
+        </article>
+
+        <article class="card">
+          <h3>Two-Way Optical Laser Communication Link</h3>
+          <div class="type">Optoelectronics &amp; Signal Processing</div>
+          <div class="media">
+            <video controls preload="metadata" playsinline>
+              <source src="https://ik.imagekit.io/t9ougsuku/IMG_2086%20(1).MOV/ik-video.mp4?updatedAt=1762098354180" type="video/mp4">
+            </video>
+          </div>
+          <p>
+            Designed a full-duplex optical channel using a laser-diode transmitter and a photodiode/solar-cell receiver with a transimpedance
+            amplifier and AC coupling. Implemented carrier-based modulation to drive a speaker while rejecting ambient-light noise and DC offsets;
+            calibrated in LTspice and on the scope. Demo shows stable bidirectional audio with clear recovery.
+          </p>
+          <p class="tags">Laser/Photodiode • TIA (op-amp) • AC Coupling/Filters • Biasing • LTspice • Breadboarding • Signal Integrity</p>
+        </article>
+
+        <article class="card">
+          <h3>Light &amp; Temperature Sensor with 8-LED Display</h3>
+          <div class="type">Analog Systems Design</div>
+          <div class="media">
+            <video controls preload="metadata" playsinline>
+              <source src="https://ik.imagekit.io/t9ougsuku/MicrosoftTeams-video.mp4?updatedAt=1762090448088" type="video/mp4">
+            </video>
+          </div>
+          <p>
+            Photoresistor &amp; thermistor dividers into LM324 comparators; 8-level indicators; MATLAB calibration
+            for voltage-to-condition mapping.
+          </p>
+          <p class="tags">Op-Amps • SPICE • MATLAB • Breadboarding • Calibration</p>
+        </article>
+
+        <article class="card">
+          <h3>Turbine Flow &amp; Power Simulator</h3>
+          <div class="type">Mechanical Systems Simulation (LabVIEW)</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-01%20151455.png?updatedAt=1762090563616" alt="Turbine VI">
+          </div>
+          <p>
+            Modeled flow→RPM→kW; Boolean ON/OFF logic; real-time graphs of performance &amp; efficiency.
+          </p>
+          <p class="tags">LabVIEW • Systems Modeling • Boolean Control • Visualization</p>
+        </article>
+
+        <article class="card">
+          <h3>Random Waveform Generator</h3>
+          <div class="type">Signal Generation &amp; Data Logging</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20023925.png?updatedAt=1762090626873" alt="Random waveform">
+          </div>
+          <p>
+            Pseudo-random 0–100 V signals; live plotting; CSV export for time-series analysis.
+          </p>
+          <p class="tags">LabVIEW • DAQ • CSV • Time-Series</p>
+        </article>
+
+        <article class="card">
+          <h3>RNA→DNA Converter &amp; Splicing Analyzer</h3>
+          <div class="type">Digital Logic Design (LabVIEW)</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-01%20150735.png?updatedAt=1762090527618" alt="RNA DNA VI">
+          </div>
+          <p>
+            Black-box RNA input; built loops, case structures, and conditional logic to convert, splice, and validate A–T / G–C ratios with dynamic status.
+          </p>
+          <p class="tags">LabVIEW • Logic &amp; Flow • GUI • Data Visualization</p>
+        </article>
+
+        <article class="card">
+          <h3>Solar Garage — Martian Habitat</h3>
+          <div class="type">Renewable Energy &amp; Multidisciplinary Design</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20024410.png?updatedAt=1762090656170" alt="Martian Habitat">
+          </div>
+          <p>
+            Circuit wiring &amp; solar testing (series/parallel); LED automation; CAD for roof absorption; 0.931 mW in bright light.
+          </p>
+          <p class="tags">Circuits • Solar • Arduino • SolidWorks • VectorWorks</p>
+        </article>
+
+        <article class="card">
+          <h3>Corsi–Rosenthal Box (Air Filtration)</h3>
+          <div class="type">Environmental Health &amp; Mechanical Design</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20023925.png?updatedAt=1762090626873" alt="Corsi-Rosenthal">
+          </div>
+          <p>
+            PM2.5 reduction via DIY CR box; linear regression verifies efficiency; designed for community health deployment.
+          </p>
+          <p class="tags">Assembly • PM2.5 • Regression • Ethics</p>
+        </article>
+
+        <article class="card">
+          <h3>Da Vinci Surgical Robot — Reverse Engineering</h3>
+          <div class="type">Biomedical Robotics &amp; Systems Analysis</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20042150.png?updatedAt=1762090755755" alt="Da Vinci Robot">
+          </div>
+          <p>
+            Mapped console→actuator control, articulation &amp; materials; proposed AI-assisted control and haptic improvements.
+          </p>
+          <p class="tags">Robotics • C++ Concepts • CAD • System Mapping</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VENTURE -->
+    <section id="venture" aria-label="Venture Capital & Leadership">
+      <h2 class="section-title">Venture Capital &amp; Leadership</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Healthcare Vertical Lead — Hillside Ventures</h3>
+          <div class="type">VC &amp; Strategic Leadership (since Sep 2025)</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20042406.png?updatedAt=1762090801167" alt="Healthcare Lead">
+          </div>
+          <p>
+            Built governance &amp; tracking (policy/healthcare/VC-PE). Sourced <b>310+</b> startups; advanced <b>8</b> to Quick Screen, <b>4</b> One-Pager, <b>2</b> Memo.
+            Represented at Galien Patient Summit; formed networks with Business France, Corporate Venture Partners, IndieBio.
+          </p>
+          <p class="tags">Dealflow • Partnerships • Healthcare Scouting • Governance</p>
+        </article>
+
+        <article class="card">
+          <h3>Recruiting Lead — Hillside Ventures</h3>
+          <div class="type">Leadership &amp; Ops</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20045032.png?updatedAt=1762090829362" alt="Recruiting Stats">
+          </div>
+          <p>
+            Exceeded 60-app goal with <b>84</b> applicants across 3 added info sessions; led promo &amp; interviews; selected <b>17</b> analysts.
+          </p>
+          <p class="tags">Talent Strategy • Comms • Event Ops • Selection</p>
+        </article>
+
+        <article class="card">
+          <h3>Media Coordinator — STEM Fund (Hillside)</h3>
+          <div class="type">Web Dev &amp; Branding</div>
+          <div class="media">
+            <a href="https://hillsideventures.uconn.edu/venture-fund/stem-fund-2025/investment-thesis-stem/" target="_blank" rel="noopener">
+              <img src="https://ik.imagekit.io/t9ougsuku/Webite.png?updatedAt=1762105026052" alt="STEM Fund site (link)">
+            </a>
+          </div>
+          <p>
+            Rebuilt the STEM Fund website using HTML in WordPress; improved navigation, accessibility, and analyst onboarding.
+          </p>
+          <p class="tags">HTML • WordPress • UX • Brand Systems</p>
+        </article>
+
+        <article class="card">
+          <h3>Venture Analyst — Hillside Ventures</h3>
+          <div class="type">Investment Analysis</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20070903.png?updatedAt=1762090860760" alt="Persephone product">
+          </div>
+          <p>
+            Led Persephone Biosciences diligence (market, competition, exit returns). On NextStep Robotics, analyzed customer
+            retention &amp; acquisition to inform go-to-market.
+          </p>
+          <p class="tags">Market Research • Financial Modeling • Exit Strategy • GTM</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <h2 class="section-title">Let’s Collaborate</h2>
+      <p class="lead">Biomedical systems, computational modeling, or healthcare VC.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2025 Rosemary Moyo</div>
+    <div class="links">
+      <a href="mailto:rosemary.moyo@uconn.edu">Email</a>
+      <a href="https://www.linkedin.com/in/rosemarymoyo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
