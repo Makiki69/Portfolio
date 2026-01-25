@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rosemary Moyo — Portfolio</title>
+  <title>Rosemary Moyo's Portfolio</title>
 
   <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,8 @@
     <div class="overlay" aria-hidden="true"></div>
     <div class="hero-text">
       <h1>Rosemary Moyo</h1>
-      <p>Biomedical Engineer • Computational &amp; Systems Biology • Venture Analyst</p>
+      <p>Molecular Biology • Bioinformatics • Science-Driven Innovation</p>
+      <p>Venture Capital Analyst • VP, Nexus Health • Founder, Kudzidza Kuneutano</p>
     </div>
   </section>
 
@@ -40,36 +41,130 @@
     <section id="about" aria-label="About">
       <h2 class="section-title">About</h2>
       <p class="lead">
-        I’m a Biomedical Engineering student specializing in <b>Computational &amp; Systems Biology</b>, building at the intersection of
-        <b>instrumentation</b>, <b>signal processing</b>, and <b>computational drug discovery</b>. I design circuits and sensors, build optical
-        communication systems, and model biological interactions with cheminformatics and docking. On the venture side, I evaluate biotech
-        and healthtech startups, conduct diligence, and build governance systems that connect innovation with investment.
+        I’m a Molecular &amp; Cell Biology major with a minor in <b>Bioinformatics</b>, working at the intersection of <b>experimental biology</b>, <b>computational analysis</b>, and <b>systems-level thinking</b>. I build reproducible bioinformatics pipelines for genomics and variant analysis, integrate wet-lab data with 
+  <b>cheminformatics and molecular docking</b>, and use data-driven methods to evaluate biological quality, signal, and risk. 
+  In parallel, I apply this technical foundation in venture settings—conducting scientific diligence on biotech and healthtech 
+  startups and helping design governance systems that connect biological innovation with capital.
       </p>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" aria-label="Engineering & Research">
-      <h2 class="section-title">Engineering &amp; Research</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Screening &amp; Computational Modeling of Plant Antimicrobials</h3>
-          <div class="type">Biomedical Research &amp; Computational Drug Discovery</div>
-          <div class="media">
-            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20034301.png?updatedAt=1762090700184" alt="Modeling overview">
-          </div>
-          <div class="media">
-            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20034356.png?updatedAt=1762090725120" alt="Docking results">
-          </div>
-          <div class="media">
-            <img src="https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179" alt="MIC in fume hood">
-          </div>
-          <p>
-            Investigated <i>Erythrina abyssinica</i> and <i>Combretum zeyheri</i> against <i>C. neoformans</i> &amp; <i>M. smegmatis</i> with MIC assays;
-            modeled hits using RDKit + AutoDock Vina; integrated SAR and docking results.
-          </p>
-          <p class="tags">Python • RDKit • AutoDock Vina • SwissADME • LC–MS/MS • PyMOL</p>
-        </article>
+    <section id="projects" aria-label="Bioinformatics & Computational Biology">
+  <h2 class="section-title">Bioinformatics &amp; Computational Biology</h2>
+  <p class="section-subtitle">
+    Computational analysis of next-generation sequencing data, including quality control,
+    genome assembly, variant calling, and transcriptomic analysis with an emphasis on
+    reproducibility and biological interpretation.
+  </p>
 
+ <div class="grid">
+
+  <article class="card">
+    <h3>NGS Quality Control, Trimming &amp; Variant Calling</h3>
+    <div class="type">Genomics • NGS Data Processing • Variant Analysis</div>
+
+    <div class="media">
+      <img src="https://ik.imagekit.io/t9ougsuku/fasterqc.png" alt="FastQC per-base sequence quality plot">
+    </div>
+    <div class="media">
+      <img src="https://ik.imagekit.io/t9ougsuku/variant_calling%20stats.png" alt="Variant calling summary statistics">
+    </div>
+
+    <p>
+      Built a complete short-read variant calling workflow starting from raw Illumina FASTQ files.
+      Performed read quality assessment with FastQC, applied multiple trimming strategies using
+      Trimmomatic, and evaluated their impact on downstream variant detection.
+    </p>
+    <p>
+      Aligned reads to a reference genome using BWA, performed post-processing with SAMtools
+      and Picard, and called SNPs and indels using bcftools. Quantified how preprocessing
+      decisions affected QUAL score distributions and variant counts.
+    </p>
+    <p class="tags">
+      FastQC • Trimmomatic • BWA • SAMtools • Picard • bcftools • Bash • NGS QC
+    </p>
+  </article>
+
+  <article class="card">
+    <h3>De novo Genome Assembly &amp; k-mer Optimization</h3>
+    <div class="type">Genome Assembly • Algorithm Evaluation</div>
+
+    <div class="media">
+      <img src="velvet_assembly_metrics.png" alt="Genome assembly metrics across k-mer sizes">
+    </div>
+    <div class="media">
+      <img src="https://ik.imagekit.io/t9ougsuku/n50_vs_kmer.png" alt="k-mer size versus N50 plot">
+    </div>
+
+    <p>
+      Performed de novo genome assembly of <i>E. coli</i> Illumina paired-end reads using Velvet,
+      systematically varying k-mer sizes to evaluate assembly quality.
+    </p>
+    <p>
+      Compared contig count, N50, and total assembly length across assemblies to identify
+      optimal parameters, demonstrating how k-mer selection influences fragmentation and
+      assembly accuracy.
+    </p>
+    <p class="tags">
+      Velvet • de novo Assembly • k-mer Optimization • Bash • N50 • Genome Metrics
+    </p>
+  </article>
+
+</div>
+
+    <article class="card">
+      <h3>Bulk RNA-seq Differential Expression Analysis</h3>
+      <div class="type">Transcriptomics • Statistical Modeling • RNA-seq</div>
+      <div class="media">
+        <img src="https://ik.imagekit.io/t9ougsuku/C.neoformans%20Volcano%20Plot.png" alt="RNA-seq volcano plot">
+      </div>
+      <div class="media">
+        <img src="https://ik.imagekit.io/t9ougsuku/top_heat%20C.neoformans.png" alt="RNA-seq heatmap">
+      </div>
+      <p>
+        Designed and executed a complete bulk RNA-seq analysis workflow using public GEO datasets
+        from <i>Cryptococcus neoformans</i> and <i>Mycobacterium smegmatis</i>, analyzing thousands
+        of genes across multiple biological replicates.
+      </p>
+      <p>
+        Performed quality control, low-count filtering, normalization, and differential expression
+        analysis using DESeq2. Generated PCA plots, MA plots, volcano plots, and heatmaps to
+        validate biological signal and replicate consistency.
+      </p>
+      <p class="tags">
+        RNA-seq • DESeq2 • R • tidyverse • ggplot2 • Statistical Analysis
+      </p>
+    </article>
+
+  </div>
+</section>
+    <section id="research" aria-label="Biomedical Research">
+  <h2 class="section-title">Biomedical Research &amp; Wet–Dry Integration</h2>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Screening &amp; Computational Modeling of Plant Antimicrobials (AiBST)</h3>
+      <div class="type">Biomedical Research &amp; Computational Drug Discovery</div>
+      <div class="media">
+        <img src="https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179" alt="MIC assay">
+      </div>
+      <p>
+        Investigated antimicrobial activity of <i>Erythrina abyssinica</i> and
+        <i>Combretum zeyheri</i> against <i>C. neoformans</i> and <i>M. smegmatis</i>
+        using MIC assays across multiple concentrations.
+      </p>
+      <p>
+        Integrated experimental results with cheminformatics descriptors, structure–activity
+        analysis, and molecular docking to assess compound plausibility and biological relevance.
+      </p>
+      <p class="tags">
+        Python • RDKit • AutoDock Vina • SwissADME • MIC Assays • Molecular Biology
+      </p>
+    </article>
+
+  </div>
+</section>
         <article class="card">
           <h3>Two-Way Optical Laser Communication Link</h3>
           <div class="type">Optoelectronics &amp; Signal Processing</div>
@@ -136,19 +231,7 @@
           </p>
           <p class="tags">LabVIEW • Logic &amp; Flow • GUI • Data Visualization</p>
         </article>
-
-        <article class="card">
-          <h3>Solar Garage — Martian Habitat</h3>
-          <div class="type">Renewable Energy &amp; Multidisciplinary Design</div>
-          <div class="media">
-            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20024410.png?updatedAt=1762090656170" alt="Martian Habitat">
-          </div>
-          <p>
-            Circuit wiring &amp; solar testing (series/parallel); LED automation; CAD for roof absorption; 0.931 mW in bright light.
-          </p>
-          <p class="tags">Circuits • Solar • Arduino • SolidWorks • VectorWorks</p>
-        </article>
-
+    
         <article class="card">
           <h3>Corsi–Rosenthal Box (Air Filtration)</h3>
           <div class="type">Environmental Health &amp; Mechanical Design</div>
@@ -160,19 +243,6 @@
           </p>
           <p class="tags">Assembly • PM2.5 • Regression • Ethics</p>
         </article>
-
-        <article class="card">
-          <h3>Da Vinci Surgical Robot — Reverse Engineering</h3>
-          <div class="type">Biomedical Robotics &amp; Systems Analysis</div>
-          <div class="media">
-            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20042150.png?updatedAt=1762090755755" alt="Da Vinci Robot">
-          </div>
-          <p>
-            Mapped console→actuator control, articulation &amp; materials; proposed AI-assisted control and haptic improvements.
-          </p>
-          <p class="tags">Robotics • C++ Concepts • CAD • System Mapping</p>
-        </article>
-      </div>
     </section>
 
     <!-- VENTURE -->
@@ -252,4 +322,5 @@
   <script src="app.js" defer></script>
 </body>
 </html>
+
 
