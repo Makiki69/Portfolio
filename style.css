@@ -189,7 +189,7 @@ section{
   background:linear-gradient(180deg,var(--card),var(--card2));
   border:1px solid var(--border);
   border-radius:var(--radius);
-  padding:16px; /* 🔧 tightened for consistent density */
+  padding:18px;
   box-shadow:var(--shadow);
   transition:box-shadow .25s ease, transform .25s ease;
 }
@@ -223,11 +223,10 @@ section{
   font-size:13px;
 }
 
-/* ================= MEDIA (FIXED SIZE ISSUE) ================= */
+/* ================= MEDIA ================= */
 .media{
   width:100%;
   aspect-ratio:16/9;
-  max-height:220px;          /* 🔥 KEY FIX */
   border-radius:14px;
   overflow:hidden;
   border:1px solid var(--border);
@@ -240,7 +239,7 @@ section{
   display:block;
   width:100%;
   height:100%;
-  object-fit:cover;          /* clean editorial crop */
+  object-fit:cover;
 }
 
 /* ================= FOOTER ================= */
