@@ -191,6 +191,10 @@ section{
   border-radius:var(--radius);
   padding:18px;
   box-shadow:var(--shadow);
+
+  display:flex;                 /* 🔑 keeps structure consistent */
+  flex-direction:column;
+
   transition:box-shadow .25s ease, transform .25s ease;
 }
 
@@ -217,29 +221,34 @@ section{
 }
 
 .tags{
-  margin-top:10px;
+  margin-top:auto;              /* 🔑 aligns tags at bottom */
   color:var(--accent);
   font-weight:700;
   font-size:13px;
 }
 
-/* ================= MEDIA ================= */
+/* ================= MEDIA (FIXED) ================= */
 .media{
   width:100%;
-  aspect-ratio:16/9;
+  height:200px;                 /* 🔑 FIXED HEIGHT */
   border-radius:14px;
   overflow:hidden;
   border:1px solid var(--border);
   margin:10px 0 12px;
   background:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;                /* 🔑 prevents collapsing */
 }
 
 .media img,
 .media video{
-  display:block;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:cover;             /* 🔑 crops tall FastQC plots */
 }
 
 /* ================= FOOTER ================= */
@@ -296,3 +305,4 @@ footer{
   z-index:3;
   transition:opacity .4s ease;
 }
+
