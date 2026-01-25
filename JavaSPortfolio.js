@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Optional slide captions (leave "" to hide)
   const captions = [
-    "Wet-lab screening & MIC assays",
-    "Circuits & Instrumentation (ECE)",
-    "Healthcare Venture & Biotech"
+   "Bioinformatics & Computational Biology",
+  "NGS Analysis • RNA-seq • Variant Calling",
+  "Biomedical Research • Engineering • Venture"
   ];
 
   // Create a caption element
@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
