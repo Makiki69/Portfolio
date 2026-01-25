@@ -227,28 +227,35 @@ section{
   font-size:13px;
 }
 
-/* ================= MEDIA (FIXED) ================= */
+/* ================= MEDIA (SQUARE TILES) ================= */
 .media{
   width:100%;
-  height:200px;                 /* 🔑 FIXED HEIGHT */
+  aspect-ratio:1 / 1;          /* 🔑 force square */
   border-radius:14px;
   overflow:hidden;
   border:1px solid var(--border);
-  margin:10px 0 12px;
+  margin:12px 0 14px;
   background:#fff;
 
   display:flex;
   align-items:center;
   justify-content:center;
-
-  flex-shrink:0;                /* 🔑 prevents collapsing */
 }
 
-.media img,
+/* Images */
+.media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;            /* fills square cleanly */
+  display:block;
+}
+
+/* Videos */
 .media video{
   width:100%;
   height:100%;
-  object-fit:cover;             /* 🔑 crops tall FastQC plots */
+  object-fit:cover;
+  display:block;
 }
 
 /* ================= FOOTER ================= */
@@ -305,4 +312,5 @@ footer{
   z-index:3;
   transition:opacity .4s ease;
 }
+
 
