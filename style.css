@@ -154,6 +154,33 @@ header a:hover::after{
   color:rgba(15,23,42,0.85);
 }
 
+/* ================= SLIDE CAPTIONS ================= */
+.slide-caption-container{
+  position:absolute;
+  bottom:8vh;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:3;
+}
+
+.slide-caption{
+  position:absolute;
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:14px;
+
+  backdrop-filter:blur(6px);
+  background:rgba(255,255,255,0.7);
+  color:#0f172a;
+
+  border:1px solid rgba(15,23,42,.08);
+  box-shadow:0 8px 20px rgba(2,6,23,.06);
+
+  opacity:0;
+  transition:opacity .6s ease;
+}
+
 /* ================= MAIN LAYOUT ================= */
 main{
   max-width:1200px;
