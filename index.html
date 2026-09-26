@@ -16,60 +16,62 @@
   <!-- NAV / TABS -->
   <header>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#venture">Venture Work</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Projects ▾</button>
+      <div class="dropdown-content">
+        <a href="#projects">Computational Biology</a>
+        <a href="#wetlab">Wet Lab Skills</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#venture">Venture Capital</a>
+        <a href="#leadership">Leadership</a>
+      </div>
+    </div>
+
+    <a href="#publications">Publications</a>
     <a href="#contact">Contact</a>
   </header>
 
-<!-- HERO: Slideshow -->
-<section class="hero-slideshow" id="top" aria-label="Intro">
+  <!-- HERO: Slideshow -->
+  <section class="hero-slideshow" id="top" aria-label="Intro">
 
-  <div class="slides">
+    <div class="slides">
+      <!-- Existing Slides -->
+      <div class="slide active" style="background-image:url('https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179');"></div>
 
-    <!-- Existing Slides -->
-    <div class="slide active" style="background-image:url('https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/Screenshot%202025-10-28%20103812.png?updatedAt=1762103858275');"></div>
 
-    <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/Screenshot%202025-10-28%20103812.png?updatedAt=1762103858275');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/VC%20in%20Biotech.webp?updatedAt=1762100068396');"></div>
 
-    <div class="slide" style="background-image:url('https://ik.imagekit.io/t9ougsuku/VC%20in%20Biotech.webp?updatedAt=1762100068396');"></div>
+      <!-- Upcoming Projects -->
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/swine.jpg?updatedAt=1789566337025');"></div>
 
-    <!-- Upcoming Projects -->
-    <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/swine.jpg?updatedAt=1789566337025');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Flies.jpg?updatedAt=1789566349536');"></div>
 
-    <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Flies.jpg?updatedAt=1789566349536');"></div>
+      <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Fall-Frontiers-2026-Website-Square.png?updatedAt=1789612856079');"></div>
+    </div>
 
-    <div class="slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Fall-Frontiers-2026-Website-Square.png');"></div>
+    <!-- Overlay -->
+    <div class="overlay" aria-hidden="true"></div>
 
-  </div>
+    <!-- Captions -->
+    <div class="slide-caption-container">
+      <div class="slide-caption" data-index="0">Lab Research • Bioinformatics • Innovation</div>
+      <div class="slide-caption" data-index="1">Computational Biology • Genomics</div>
+      <div class="slide-caption" data-index="2">Venture Capital • Biotech Innovation</div>
+      <div class="slide-caption" data-index="3">Metagenomic Analysis of Leptospira in Swine</div>
+      <div class="slide-caption" data-index="4">Metabolomics Data Analysis in Drosophila melanogaster</div>
+      <div class="slide-caption" data-index="5">Fall Frontiers Research Poster Presentation</div>
+    </div>
 
-  <!-- Overlay -->
-  <div class="overlay" aria-hidden="true"></div>
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1>Rosemary Moyo</h1>
+      <p>Molecular Biology • Bioinformatics • Science-Driven Innovation</p>
+      <p>Venture Capital Analyst • VP, Nexus Health • Founder, Kudzidza Kuneutano</p>
+    </div>
 
-  <!-- Captions (outside slides — required for your CSS) -->
-  <div class="slide-caption-container">
-
-    <div class="slide-caption" data-index="0">Lab Research • Bioinformatics • Innovation</div>
-
-    <div class="slide-caption" data-index="1">Computational Biology • Genomics</div>
-
-    <div class="slide-caption" data-index="2">Venture Capital • Biotech Innovation</div>
-
-    <div class="slide-caption" data-index="3">Metagenomic Analysis of Leptospira in Swine</div>
-
-    <div class="slide-caption" data-index="4">Metabolomics Data Analysis in Drosophila melanogaster</div>
-
-    <div class="slide-caption" data-index="5">Fall Frontiers Research Poster Presentation</div>
-
-  </div>
-
-  <!-- Hero Text -->
-  <div class="hero-text">
-    <h1>Rosemary Moyo</h1>
-    <p>Molecular Biology • Bioinformatics • Science-Driven Innovation</p>
-    <p>Venture Capital Analyst • VP, Nexus Health • Founder, Kudzidza Kuneutano</p>
-  </div>
-
-</section>
+  </section>
 
   <main>
     <!-- ABOUT -->
@@ -77,168 +79,316 @@
       <h2 class="section-title">About</h2>
       <p class="lead">
         I’m a Molecular &amp; Cell Biology major with a minor in <b>Bioinformatics</b>, working at the intersection of <b>experimental biology</b>, <b>computational analysis</b>, and <b>systems-level thinking</b>. I build reproducible bioinformatics pipelines for genomics and variant analysis, integrate wet-lab data with 
-  <b>cheminformatics and molecular docking</b>, and use data-driven methods to evaluate biological quality, signal, and risk. 
-  In parallel, I apply this technical foundation in venture settings conducting scientific diligence on biotech and healthtech 
-  startups and helping design governance systems that connect biological innovation with capital.
+        <b>cheminformatics and molecular docking</b>, and use data-driven methods to evaluate biological quality, signal, and risk. 
+        In parallel, I apply this technical foundation in venture settings conducting scientific diligence on biotech and healthtech 
+        startups and helping design governance systems that connect biological innovation with capital.
         <br /><br />
-  <a href="https://github.com/makiki69" target="_blank" rel="noopener noreferrer" class="inline-link">
-    View my code for computational projects on GitHub →
-  </a>
+        <a href="https://github.com/makiki69" target="_blank" rel="noopener noreferrer" class="inline-link">
+          View my code for computational projects on GitHub →
+        </a>
       </p>
     </section>
     
-    <!-- PROJECTS -->
+    <!-- UPCOMING PROJECTS -->
     <section id="events" class="upcoming-events">
-  <h2 class="section-title">Upcoming Projects (2026)</h2>
+      <h2 class="section-title">Upcoming Projects (2026)</h2>
 
-  <div class="event-card">
-    <h3>Metagenomic Analysis of Leptospira in Swine</h3>
-    <p>
-      Developing a metagenomic pipeline to identify and characterize <em>Leptospira</em> species in swine reservoirs.
-      Includes taxonomic profiling, virulence gene detection, and pathogen surveillance analytics.
-    </p>
-    <p class="tags">Metagenomics • Pathogen Genomics • Bioinformatics Pipeline Development</p>
-  </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Metagenomic Analysis of Leptospira in Swine</h3>
+          <div class="type">Metagenomics • Pathogen Genomics • Bioinformatics Pipeline Development</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/swine.jpg?updatedAt=1789566337025" alt="Swine metagenomics">
+          </div>
+          <p>
+            Developing a metagenomic pipeline to identify and characterize <em>Leptospira</em> species in swine reservoirs.
+            Includes taxonomic profiling, virulence gene detection, and pathogen surveillance analytics.
+          </p>
+          <p class="tags">Metagenomics • Pathogen Genomics • Bioinformatics Pipeline Development</p>
+        </article>
 
-  <div class="event-card">
-    <h3>Metabolomics Data Analysis in Drosophila melanogaster</h3>
-    <p>
-      Building an LC‑MS metabolomics workflow to quantify metabolic shifts in <em>Drosophila</em> under experimental conditions.
-      Includes peak detection, normalization, PCA, pathway enrichment, and biomarker identification.
-    </p>
-    <p class="tags">LC‑MS • XCMS • MetaboAnalyst • Systems Biology</p>
-  </div>
+        <article class="card">
+          <h3>Metabolomics Data Analysis in Drosophila melanogaster</h3>
+          <div class="type">LC‑MS • Systems Biology</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/Flies.jpg?updatedAt=1789566349536" alt="Drosophila metabolomics">
+          </div>
+          <p>
+            Building an LC‑MS metabolomics workflow to quantify metabolic shifts in <em>Drosophila</em> under experimental conditions.
+            Includes peak detection, normalization, PCA, pathway enrichment, and biomarker identification.
+          </p>
+          <p class="tags">LC‑MS • XCMS • MetaboAnalyst • Systems Biology</p>
+        </article>
 
-  <div class="event-card">
-    <h3>Fall Frontiers Research Poster Presentation</h3>
-    <p>
-      Presenting: Comparative Genomics & Virulence Factor Analysis of <em>Leptospira</em> Strains in Bovine Samples.
-    </p>
-    <p class="tags">Comparative Genomics • Virulence Analysis • Research Communication</p>
-  </div>
-</section>
-   <section id="projects" aria-label="Bioinformatics & Computational Biology">
-  <h2 class="section-title">Bioinformatics &amp; Computational Biology</h2>
-  <p class="section-subtitle">
-    Computational analysis of next-generation sequencing data, including quality control,
-    genome assembly, variant calling, and transcriptomic analysis with an emphasis on
-    reproducibility and biological interpretation.
-  </p>
+        <article class="card">
+          <h3>Fall Frontiers Research Poster Presentation</h3>
+          <div class="type">Comparative Genomics • Virulence Analysis</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/Fall-Frontiers-2026-Website-Square.png?updatedAt=1789612856079" alt="Fall Frontiers poster">
+          </div>
+          <p>
+            Presenting: Comparative Genomics & Virulence Factor Analysis of <em>Leptospira</em> Strains in Bovine Samples.
+          </p>
+          <p class="tags">Comparative Genomics • Virulence Analysis • Research Communication</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="grid">
+    <!-- BIOINFORMATICS & COMPUTATIONAL BIOLOGY -->
+    <section id="projects" aria-label="Bioinformatics & Computational Biology">
+      <h2 class="section-title">Bioinformatics &amp; Computational Biology</h2>
+      <p class="section-subtitle">
+        Computational analysis of next-generation sequencing data, including quality control,
+        genome assembly, variant calling, and transcriptomic analysis with an emphasis on
+        reproducibility and biological interpretation.
+      </p>
 
-    <!-- NGS QC -->
-    <article class="card">
-      <h3>NGS Quality Control, Trimming &amp; Variant Calling</h3>
-      <div class="type">Genomics • NGS Data Processing • Variant Analysis</div>
+      <!-- PROJECTS SLIDESHOW -->
+      <div class="project-slideshow">
+        <h3 class="section-subtitle">Project Gallery</h3>
 
-      <div class="media media--primary">
-        <img src="https://ik.imagekit.io/t9ougsuku/fasterq_images.jpg" alt="FastQC per-base sequence quality plot">
+        <div class="project-slides">
+          <div class="p-slide active" style="background-image:url('https://ik.imagekit.io/t9ougsuku/Screenshot%202025-10-28%20103812.png');"></div>
+          <div class="p-slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Fall-Frontiers-2026-Website-Square.png?updatedAt=1789612856079');"></div>
+          <div class="p-slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/swine.jpg?updatedAt=1789566337025');"></div>
+          <div class="p-slide" style="background-image:url('https://ik.imagekit.io/fljbdhedtm/Flies.jpg?updatedAt=1789566349536');"></div>
+        </div>
+
+        <div class="p-overlay"></div>
       </div>
 
-      <div class="media media--secondary">
-        <img src="https://ik.imagekit.io/t9ougsuku/Variant%20Calling%20Summary%20Stats.jpg" alt="Variant calling summary statistics">
+      <div class="grid">
+        <!-- NGS QC -->
+        <article class="card">
+          <h3>NGS Quality Control, Trimming &amp; Variant Calling</h3>
+          <div class="type">Genomics • NGS Data Processing • Variant Analysis</div>
+
+          <div class="media media--primary">
+            <img src="https://ik.imagekit.io/t9ougsuku/fasterq_images.jpg" alt="FastQC per-base sequence quality plot">
+          </div>
+
+          <div class="media media--secondary">
+            <img src="https://ik.imagekit.io/t9ougsuku/Variant%20Calling%20Summary%20Stats.jpg" alt="Variant calling summary statistics">
+          </div>
+
+          <p>Built a complete short-read variant calling workflow starting from raw Illumina FASTQ files.</p>
+          <p class="tags">FastQC • Trimmomatic • BWA • SAMtools • Picard • bcftools • Bash</p>
+        </article>
+
+        <!-- De novo assembly -->
+        <article class="card">
+          <h3>De novo Genome Assembly &amp; k-mer Optimization</h3>
+          <div class="type">Genome Assembly • Algorithm Evaluation</div>
+
+          <div class="media media--primary">
+            <img src="https://ik.imagekit.io/t9ougsuku/Total%20length%20vs%20reference.jpg" alt="Assembly metrics">
+          </div>
+
+          <div class="media media--secondary">
+            <img src="https://ik.imagekit.io/t9ougsuku/N50%20vs%20kmer.jpg" alt="k-mer vs N50 plot">
+          </div>
+
+          <p>Performed de novo genome assembly of <i>E. coli</i> using Velvet.</p>
+          <p class="tags">Velvet • de novo Assembly • k-mer Optimization • Bash</p>
+        </article>
+
+        <!-- RNA-seq -->
+        <article class="card">
+          <h3>Bulk RNA-seq Differential Expression Analysis</h3>
+          <div class="type">Transcriptomics • Statistical Modeling • RNA-seq</div>
+
+          <div class="media media--primary">
+            <img src="https://ik.imagekit.io/t9ougsuku/volcano.jpg" alt="RNA-seq volcano plot">
+          </div>
+
+          <div class="media media--secondary">
+            <img src="https://ik.imagekit.io/t9ougsuku/top_heat.jpg" alt="RNA-seq heatmap">
+          </div>
+
+          <p>Designed and executed a complete bulk RNA-seq analysis workflow.</p>
+          <p class="tags">RNA-seq • DESeq2 • R • ggplot2 • Statistical Analysis</p>
+        </article>
+
+        <!-- Phylogenetic Analysis -->
+        <article class="card">
+          <h3>Phylogenetic Analysis of <em>Leptospira</em> Species</h3>
+          <div class="type">Comparative Genomics • Evolutionary Analysis</div>
+
+          <div class="media media--primary">
+            <img src="https://ik.imagekit.io/fljbdhedtm/mauve_alignment.png" alt="Genome alignment visualization">
+          </div>
+
+          <div class="media media--secondary">
+            <img src="https://ik.imagekit.io/fljbdhedtm/phylo_tree_example.png" alt="Phylogenetic tree">
+          </div>
+
+          <p>
+            Built a comparative genomics workflow including whole‑genome alignment (MAFFT, progressiveMauve),
+            SNP extraction, Mash distance estimation, and phylogenetic tree reconstruction using FastTree.
+            Identified mutation hotspots and evolutionary relationships between pathogenic and non‑pathogenic strains.
+          </p>
+
+          <p class="tags">MAFFT • progressiveMauve • Mash • FastTree • SNP Analysis</p>
+        </article>
+
+        <!-- Water Quality GIS Mapping -->
+        <article class="card">
+          <h3>Geospatial Water Quality Mapping</h3>
+          <div class="type">GIS • Environmental Microbiology</div>
+
+          <div class="media media--primary">
+            <img src="https://ik.imagekit.io/fljbdhedtm/water_map.png" alt="Water quality GIS map">
+          </div>
+
+          <div class="media media--secondary">
+            <img src="https://ik.imagekit.io/fljbdhedtm/qgis_layers.png" alt="QGIS layers">
+          </div>
+
+          <p>
+            Developed GIS‑based water contamination maps integrating microbial load, environmental metadata,
+            and spatial statistics. Used QGIS and Python geospatial libraries to visualize contamination gradients
+            and identify high‑risk zones for public health monitoring.
+          </p>
+
+          <p class="tags">QGIS • Python GIS • Spatial Statistics • Environmental Health</p>
+        </article>
       </div>
+    </section>
 
-      <p>Built a complete short-read variant calling workflow starting from raw Illumina FASTQ files.</p>
-      <p class="tags">FastQC • Trimmomatic • BWA • SAMtools • Picard • bcftools • Bash</p>
-    </article>
+    <!-- WET LAB SKILLS -->
+    <section id="wetlab" aria-label="Wet Lab Skills">
+      <h2 class="section-title">Wet Lab Skills</h2>
 
-    <!-- De novo assembly -->
-    <article class="card">
-      <h3>De novo Genome Assembly &amp; k-mer Optimization</h3>
-      <div class="type">Genome Assembly • Algorithm Evaluation</div>
+      <div class="grid">
+        <article class="card">
+          <h3>Hamster IP Blood Sample Collection</h3>
+          <div class="type">Animal Handling • Sample Collection</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/Conjuctival_Blood_Collection.png?updatedAt=1789565753799" alt="Hamster IP blood collection">
+          </div>
+          <p>
+            Performed intraperitoneal and conjunctival blood collection in hamsters under approved protocols,
+            ensuring animal welfare, sample integrity, and biosafety compliance.
+          </p>
+          <p class="tags">Animal Handling • IP Collection • Biosafety</p>
+        </article>
 
-      <div class="media media--primary">
-        <img src="https://ik.imagekit.io/t9ougsuku/Total%20length%20vs%20reference.jpg" alt="Assembly metrics">
+        <article class="card">
+          <h3>Hamster Dissection for Sample Collection</h3>
+          <div class="type">Necropsy • Tissue Sampling</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/OIP.png?updatedAt=1789565726868" alt="Hamster dissection">
+          </div>
+          <p>
+            Conducted necropsy and tissue sampling for downstream molecular and microbiological assays,
+            following sterile technique and ethical guidelines.
+          </p>
+          <p class="tags">Necropsy • Tissue Collection • Sterile Technique</p>
+        </article>
+
+        <article class="card">
+          <h3>Cell Culture &amp; Protein Translocation</h3>
+          <div class="type">Cell Biology • Microscopy</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/Cell%20Culture.png?updatedAt=1789565727483" alt="Cell culture and translocation">
+          </div>
+          <p>
+            Maintained mammalian cell cultures and performed assays to study protein translocation and localization,
+            integrating imaging data with quantitative analysis.
+          </p>
+          <p class="tags">Cell Culture • Microscopy • Protein Localization</p>
+        </article>
+
+        <article class="card">
+          <h3>DNA Extraction &amp; Purification</h3>
+          <div class="type">Molecular Biology • Genomics Prep</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/DNA%20extraction.png?updatedAt=1789565727050" alt="DNA extraction">
+          </div>
+          <p>
+            Performed DNA extraction and purification from biological samples for downstream PCR, sequencing,
+            and genotyping workflows.
+          </p>
+          <p class="tags">DNA Extraction • Purification • Sample Prep</p>
+        </article>
+
+        <article class="card">
+          <h3>qPCR &amp; Gene Expression Quantification</h3>
+          <div class="type">Quantitative PCR • Gene Expression</div>
+          <div class="media">
+            <img src="https://ik.imagekit.io/fljbdhedtm/qPCR.png?updatedAt=1789565727127" alt="qPCR">
+          </div>
+          <p>
+            Designed and executed qPCR assays to quantify gene expression, including primer design,
+            standard curve generation, and data interpretation.
+          </p>
+          <p class="tags">qPCR • Gene Expression • Data Analysis</p>
+        </article>
       </div>
+    </section>
 
-      <div class="media media--secondary">
-        <img src="https://ik.imagekit.io/t9ougsuku/N50%20vs%20kmer.jpg" alt="k-mer vs N50 plot">
+    <!-- ENGINEERING -->
+    <section id="engineering" aria-label="Engineering Projects">
+      <h2 class="section-title">Engineering &amp; Systems Design</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Two-Way Optical Laser Communication Link</h3>
+          <div class="type">Optoelectronics &amp; Signal Processing</div>
+
+          <div class="media media--video">
+            <video controls preload="metadata" playsinline>
+              <source src="https://ik.imagekit.io/t9ougsuku/IMG_2086%20(1).MOV/ik-video.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p>Designed a full-duplex optical channel using a laser-diode transmitter.</p>
+          <p class="tags">Laser • Photodiode • TIA • AC Coupling • LTspice</p>
+        </article>
+
+        <article class="card">
+          <h3>Light &amp; Temperature Sensor with 8-LED Display</h3>
+          <div class="type">Analog Systems Design</div>
+
+          <div class="media media--video">
+            <video controls preload="metadata" playsinline>
+              <source src="https://ik.imagekit.io/t9ougsuku/MicrosoftTeams-video.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p>Photoresistor &amp; thermistor dividers into LM324 comparators.</p>
+          <p class="tags">Op-Amps • SPICE • MATLAB</p>
+        </article>
+
+        <article class="card">
+          <h3>Turbine Flow &amp; Power Simulator</h3>
+          <div class="type">Mechanical Systems Simulation (LabVIEW)</div>
+
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-01%20151455.png" alt="Turbine simulator">
+          </div>
+
+          <p>Modeled flow→RPM→kW with Boolean ON/OFF logic.</p>
+          <p class="tags">LabVIEW • Systems Modeling</p>
+        </article>
+
+        <article class="card">
+          <h3>Corsi–Rosenthal Box (Air Filtration)</h3>
+          <div class="type">Environmental Health &amp; Mechanical Design</div>
+
+          <div class="media">
+            <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20023925.png" alt="Corsi–Rosenthal box">
+          </div>
+
+          <p>PM2.5 reduction via DIY CR box.</p>
+          <p class="tags">PM2.5 • Regression • Ethics</p>
+        </article>
       </div>
+    </section>
 
-      <p>Performed de novo genome assembly of <i>E. coli</i> using Velvet.</p>
-      <p class="tags">Velvet • de novo Assembly • k-mer Optimization • Bash</p>
-    </article>
+    <!-- LEADERSHIP ANCHOR -->
+    <section id="leadership"></section>
 
-    <!-- RNA-seq -->
-    <article class="card">
-      <h3>Bulk RNA-seq Differential Expression Analysis</h3>
-      <div class="type">Transcriptomics • Statistical Modeling • RNA-seq</div>
-
-      <div class="media media--primary">
-        <img src="https://ik.imagekit.io/t9ougsuku/volcano.jpg" alt="RNA-seq volcano plot">
-      </div>
-
-      <div class="media media--secondary">
-        <img src="https://ik.imagekit.io/t9ougsuku/top_heat.jpg" alt="RNA-seq heatmap">
-      </div>
-
-      <p>Designed and executed a complete bulk RNA-seq analysis workflow.</p>
-      <p class="tags">RNA-seq • DESeq2 • R • ggplot2 • Statistical Analysis</p>
-    </article>
-
-  </div>
-</section>
-  <section id="engineering" aria-label="Engineering Projects">
-  <h2 class="section-title">Engineering &amp; Systems Design</h2>
-
-  <div class="grid">
-
-    <article class="card">
-      <h3>Two-Way Optical Laser Communication Link</h3>
-      <div class="type">Optoelectronics &amp; Signal Processing</div>
-
-      <div class="media media--video">
-        <video controls preload="metadata" playsinline>
-          <source src="https://ik.imagekit.io/t9ougsuku/IMG_2086%20(1).MOV/ik-video.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <p>Designed a full-duplex optical channel using a laser-diode transmitter.</p>
-      <p class="tags">Laser • Photodiode • TIA • AC Coupling • LTspice</p>
-    </article>
-
-    <article class="card">
-      <h3>Light &amp; Temperature Sensor with 8-LED Display</h3>
-      <div class="type">Analog Systems Design</div>
-
-      <div class="media media--video">
-        <video controls preload="metadata" playsinline>
-          <source src="https://ik.imagekit.io/t9ougsuku/MicrosoftTeams-video.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <p>Photoresistor &amp; thermistor dividers into LM324 comparators.</p>
-      <p class="tags">Op-Amps • SPICE • MATLAB</p>
-    </article>
-
-    <article class="card">
-      <h3>Turbine Flow &amp; Power Simulator</h3>
-      <div class="type">Mechanical Systems Simulation (LabVIEW)</div>
-
-      <div class="media">
-        <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-01%20151455.png">
-      </div>
-
-      <p>Modeled flow→RPM→kW with Boolean ON/OFF logic.</p>
-      <p class="tags">LabVIEW • Systems Modeling</p>
-    </article>
-
-    <article class="card">
-      <h3>Corsi–Rosenthal Box (Air Filtration)</h3>
-      <div class="type">Environmental Health &amp; Mechanical Design</div>
-
-      <div class="media">
-        <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20023925.png">
-      </div>
-
-      <p>PM2.5 reduction via DIY CR box.</p>
-      <p class="tags">PM2.5 • Regression • Ethics</p>
-    </article>
-
-  </div>
-</section>
     <!-- VENTURE -->
     <section id="venture" aria-label="Venture Capital & Leadership">
       <h2 class="section-title">Venture Capital &amp; Leadership</h2>
@@ -297,6 +447,55 @@
       </div>
     </section>
 
+    <!-- PUBLICATIONS -->
+    <section id="publications" aria-label="Publications">
+      <h2 class="section-title">Publications &amp; Features</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Alumni Spotlight: Rosemary Moyo Becomes the 2025 AFS Youth Assembly Ambassador</h3>
+          <div class="type">EdMatters Africa</div>
+          <div class="media">
+            <a href="https://www.edmattersafrica.org/post/alumni-spotlight-rosemary-moyo-becomes-the-2025-afs-youth-assembly-ambassador" target="_blank" rel="noopener">
+              <img src="https://ik.imagekit.io/t9ougsuku/fume%20lab.jpg?updatedAt=1762090377179" alt="EdMatters Africa feature">
+            </a>
+          </div>
+          <p>
+            Feature highlighting my journey in STEM, leadership, and global youth representation as the 2025 AFS Youth Assembly Ambassador.
+          </p>
+          <p class="tags">Youth Leadership • STEM Advocacy • Global Engagement</p>
+        </article>
+
+        <article class="card">
+          <h3>Thornless</h3>
+          <div class="type">UConn Magazine</div>
+          <div class="media">
+            <a href="https://magazine.uconn.edu/2026/06/11/thornless/" target="_blank" rel="noopener">
+              <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-02%20023925.png" alt="UConn Magazine Thornless">
+            </a>
+          </div>
+          <p>
+            UConn Magazine feature exploring resilience, scientific curiosity, and the intersections of personal narrative and research.
+          </p>
+          <p class="tags">Storytelling • Resilience • Academic Journey</p>
+        </article>
+
+        <article class="card">
+          <h3>Commitment to Energy Sustainability Links Huskies Across Generations</h3>
+          <div class="type">UConn Today</div>
+          <div class="media">
+            <a href="https://today.uconn.edu/2025/01/commitment-to-energy-sustainability-links-huskies-from-different-generations-through-international-contest/" target="_blank" rel="noopener">
+              <img src="https://ik.imagekit.io/t9ougsuku/Screenshot%202025-11-01%20151455.png" alt="UConn Today energy sustainability">
+            </a>
+          </div>
+          <p>
+            Coverage of an international energy sustainability contest connecting UConn students and alumni, highlighting interdisciplinary collaboration.
+          </p>
+          <p class="tags">Energy Sustainability • Interdisciplinary Collaboration • Global Contest</p>
+        </article>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" aria-label="Contact">
       <h2 class="section-title">Let’s Collaborate</h2>
@@ -316,12 +515,3 @@
   <script src="app.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
